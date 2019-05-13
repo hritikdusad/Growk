@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="shortcut icon" href="./logo.ico" />
+  <link rel="shortcut icon" href="images/tab/logo.ico"/>
   <title>GrowK</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,229 +9,289 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> 
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  <script href="./action.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script href="js/action.js"></script>
   <body>
 
+<!-- NAVBAR -->
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                      
       </button>
-      <a class="navbar-brand" href="#"><img src="./logo.png" style="height: 25px;"></a>
+      <a class="navbar-brand" href="#"><img src="images/logo/logo.png" class="nav_logo"><div class="name"><b>GROWK</b></div></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <button type="button" class="btn btn-primary navbar-btn navbar-right">SIGN-IN</button>
+        <button type="button" class="btn btn-default navbar-btn navbar-right" id="SIGN-IN">SIGN-IN</button>
       </ul>
-      <form class="navbar-form navbar-right" action="/action_page.php">
-             <div class="inner-addon right-addon">
-      <i class="glyphicon glyphicon-search"></i>
-      <input type="text" class="form-control size" placeholder="Search" />
-    </div>
-      </form>
-
-
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Courses</a></li>
+        <li class="active"><a href="#" id="heading1">HOME</a></li>
+        <li><a href="#" id="heading2">ABOUT US</a></li>
+        <li><a href="#" id="heading2">COURSES</a></li>
+        <li>
+          <form class="navbar-form navbar-right">
+            <div class="inner-addon right-addon">
+              <i class="glyphicon glyphicon-search"></i>
+              <input type="text" class="form-control size" placeholder="Search"/>
+            </div>
+          </form>
+        </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-bell"></span></a>
+          <a class="dropdown-toggle dropdown" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-bell"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
+            <li><a href="#" id="notifications">No-Notifications</a></li>
           </ul>
         </li> 
-      </ul>
-      
+      </ul>    
     </div>
   </div>
 </nav>
+
+<!-- END -->
+
+
+
+<!-- CAROUSEL-1 -->
  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="s1.jpg" alt="Los Angeles" >
+  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel1" data-slide-to="0" class="active" id="carousel-circles"></li>
+          <li data-target="#myCarousel1" data-slide-to="1" id="carousel-circles"></li>
+          <li data-target="#myCarousel1" data-slide-to="2" id="carousel-circles"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/homescreen/s1.png" alt="Student in library" id="carousel1-images">
+          </div>
+          <div class="item">
+            <img src="images/homescreen/s2.png" alt="Chicago" id="carousel1-images" >
+          </div>
+          <div class="item">
+            <img src="images/homescreen/s3.png" alt="New york" id="carousel1-images" >
+          </div>
       </div>
-
-      <div class="item">
-        <img src="s2.jpg" alt="Chicago" >
-      </div>
-    
-      <div class="item">
-        <img src="s3.jpg" alt="New york" >
-      </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+      <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+          <i class="fas fa-arrow-left" id="carousel-arrow"></i>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+          <i class="fas fa-arrow-right" id="carousel-arrow"></i>
+          <span class="sr-only">Next</span>
+      </a>
   </div>
 
-  <div class="gap">
-    <div class="row">
-      <div class="col-sm-12">
-        
+  <!-- END -->
+
+
+<!-- NAVBAR-2 -->
+  <div class="container-fluid">
+      <div class="row gap">
+        <div class="col-sm-12 nav2-text">
+            <p>Created By Ateet, Smriti, Himanshu</p>
+        </div>
       </div>
-    </div>
   </div>
 
+  <!-- END -->
+
+
+<!-- POPULAR COURSES SECTION -->
+<div class="background1">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <hr class="popular_courses">
+        <hr class="new-section">
         <h1 class="popular_courses_heading">Popular courses</h1>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid ">
-    <div class="row images">
+<div id="section-1">
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-sm-4">
-        <img src="./s1.jpg" class="popular_courses_section">
+        <div class="Box">
+          <a href="#" id="course">
+            <img src="images/courses/webd.png" alt="course1" class="img-responsive">
+            <div class="Course-details">
+              <h3>WEB DEVELOPMENT</h3>
+              <p>5 COURSE SPECIALIZATION</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="col-sm-4">
-        <img src="./s2.jpg" class="popular_courses_section">
+        <div class="Box">
+          <a href="#" id="course">
+            <img src="images/courses/cn.png" alt="course1" class="img-responsive">
+            <div class="Course-details">
+              <h3>COMPUTER NETWORKS</h3>
+              <p>5 COURSE SPECIALIZATION</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="col-sm-4">
-        <img src="./s3.jpg" class="popular_courses_section">
+        <div class="Box">
+          <a href="#" id="course">
+            <img src="images/courses/ui.png" alt="course1" class="img-responsive">
+            <div class="Course-details">
+              <h3>UI-UX DESIGN</h3>
+              <p>5 COURSE SPECIALIZATION</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid collapse" id="demo">
-    <div class="row images">
-      <div class="col-sm-4">
-        <img src="./s1.jpg" class="popular_courses_section">
-      </div>
-      <div class="col-sm-4">
-        <img src="./s2.jpg" class="popular_courses_section">
-      </div>
-      <div class="col-sm-4">
-        <img src="./s3.jpg" class="popular_courses_section">
-      </div>
-    </div>
-  </div>
+</div>
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 explore_button">
-        <button data-toggle="collapse" data-target="#demo" class="btn-primary">Explore all courses</button>
+        <a href="#"><button data-toggle="collapse" data-target="#demo" class="btn btn-default" id="explore_button" >Explore all courses</button></a>
       </div>
     </div>
   </div>
+  <hr>  
+</div>
 
-  <hr>
 
 
 
 <!-- 3D coursel --->
 
-<h1>3d coursel here'</h1>
-<div class="gap">
+
+  <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        
+        <hr class="new-section">
+        <h1 class="popular_courses_heading">How it Works</h1>
       </div>
     </div>
   </div>
 
+  <section id="slider">
+    <input type="radio" name="slider" id="s1">
+    <input type="radio" name="slider" id="s2">
+    <input type="radio" name="slider" id="s3" checked>
+    <input type="radio" name="slider" id="s4">
+    <input type="radio" name="slider" id="s5">
+    <label for="s1" id="slide1"></label>
+    <label for="s2" id="slide2"></label>
+    <label for="s3" id="slide3"></label>
+    <label for="s4" id="slide4"></label>
+    <label for="s5" id="slide5"></label>
+  </section>
 
-
-
+  <!-- END -->
 
 
 <!-- What our students say!!!--->
 
-
-
-
-  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    
     <div class="carousel-inner">
       <div class="item active">
-        <img src="s1.jpg" alt="Los Angeles" >
+        <img src="images/students/stud(3).png" id="carousel2-image">
       </div>
-
       <div class="item">
-        <img src="s2.jpg" alt="Chicago" >
+        <img src="images/students/stud(2).png" id="carousel2-image">
       </div>
-    
       <div class="item">
-        <img src="s3.jpg" alt="New york" >
+        <img src="images/students/stud(1).png" id="carousel2-image">
       </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
+    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+        <i class="fas fa-arrow-left" id="carousel-arrow"></i>
+        <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
+    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+        <i class="fas fa-arrow-right" id="carousel-arrow"></i>
+        <span class="sr-only">Next</span>
     </a>
+</div>
+
+
+<!-- END -->
+
+<!-- NEWSLETTER SECTION -->
+<div class="background3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <hr class="new-section">
+        <h1 class="popular_courses_heading">Subscribe to newsletter</h1>
+      </div>
+    </div>
   </div>
-
-
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+          <form class="form-inline">
+            <div class="form-group" id="section-3">
+                <input type="email" name="email" placeholder="Email Address" class="form-control" id="newsletter">
+                <button type="submit" class="btn btn-default" id="subscribe">Subscribe</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+<hr class="divide">
+<!-- END -->
 
 
 <!-- Download app section -->
-  
-  <div class="container-fluid app_section">
-    <hr class="line">
-    <div class="row">
-      <div class="col-sm-4 image">
-        <img src="./logo.png">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="#"><img src="logo.png" class="logo-contact-us"></a>
+    </div>
+    <div class="col-sm-4" class="apps">
+      <h3><b>Mobile</b></h3>
+      <div>
+        <button class="btn btn-default" id="apple"><i class="fab fa-apple"></i><span class="apple-text">Download the App</span></button>
       </div>
-      <div class="col-sm-4">
-        <h2>Mobile</h2>
-        <!-- app images-->
-      </div>
-      <div class="col-sm-4">
-        <h2>Contact</h2>
-        <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-        <p>location</p>
-        <a href="#"><i class="fas fa-mobile"></i></a>   
-        <p>9802950599</p>
-        <a href="#"><i class="far fa-envelope"></i></a>
-        <p>sgdvsdaskjdbaskhdbkadb</p>
-
+      <div>
+        <button class="btn btn-default" id="apple"><i class="fab fa-google-play"></i><span class="apple-text"> Get it On Google Play</span></button>
       </div>
     </div>
+    <div class="col-sm-4">
+      <h3><b>Contact</b></h3>
+            <ul class="detail">
+              <li><i class="fas fa-map-marker-alt"></i><h4>Lorem Ipsum</h4></li>
+              <li><i class="fas fa-mobile-alt"></i><h4>Lorem Ipsum</h4></li>
+              <li><i class="fas   "></i><h4>Lorem Ipsum</h4></li>
+          </ul>
+    </div>
   </div>
+</div>
+  <hr class="divide">
 
+  <!-- END -->
+
+
+<!-- footer -->
   <div class="container-fluid">
-    <hr class="line">
     <div class="row">
       <div class="col-sm-6">
-        CopyRight c 2019 GrowK. All Rights reserved
+        <h4 id="statement">Copyright &copy; GROW K. All rights reserved</h4>
       </div>
-      <div class="col-sm-6 contact_icons">
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-        <a href=""><i class="fab fa-linkedin-in"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
+      <div class="col-sm-6 side" >
+              <a href="#"><button class="btn btn-default" id="social"><i class="far fa-envelope"></i></button></a>
+              <a href="#"><button class="btn btn-default" id="social"><i class="fab fa-twitter"></i></button></a>
+              <a href="#"><button class="btn btn-default" id="social"><i class="fab fa-linkedin-in"></i></button></a>
+              <a href="#"><button class="btn btn-default" id="social"><i class="fab fa-facebook-f"></i></button></a>
+              <a href="#"><button class="btn btn-default" id="social"><i class="fab fa-instagram"></i></button></a>
       </div>
     </div>
   </div>
-
+<!-- END -->
 
   </body>
 </html>
