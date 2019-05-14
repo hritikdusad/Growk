@@ -127,13 +127,22 @@ nav{
 .gap{
 	background-color: #FFC642;
 	height: 150px;
-	
-}
-.nav2-text{
 	text-align: center;
+}
+
+#special-buttons{
+	width: 200px;
+	height: 40px;
+	margin-top: 50px;
+	border-color: #034078;
+	background-color:#034078;	
 	color: #FFFFFF;
-	font-size: 16px;
-	margin-top: 60px
+	font-size: 15px;
+}
+
+#special-buttons:hover{
+	color: #034078;
+	background-color:#FFFFFF; 
 }
 
 /*---------------*/
@@ -266,11 +275,26 @@ nav{
   transform: translate3d(30%,0,-200px);
 }
 
-#slide1 { background-image:url('middle.png');}
-#slide2 { background: #4CAF50 }
-#slide3 { background: #CDDC39 }
-#slide4 { background: #FFC107 }
-#slide5 { background: #FF5722 }
+#slide1{
+		background-image:url('../images/special/middle.png');
+		background-size: cover;
+}
+#slide2{
+		background-image:url('../images/special/start.png');
+		background-size: cover;
+}
+#slide3{
+		background-image:url('../images/special/middle.png');
+		background-size: cover;
+}
+#slide4{
+		background-image:url('../images/special/stop.png');
+		background-size: cover;
+}
+#slide5{
+		background-image:url('../images/special/start.png');
+		background-size: cover;
+}
 
 
 
@@ -415,6 +439,13 @@ ul{
 
 a{
 	text-decoration: none;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 }
 
 
@@ -581,3 +612,40 @@ a{
 
 
 
+/* upload video */
+
+#fileLoader
+{
+    display:none;
+}
+
+#btnOpenFileDialog{
+	margin-top: 114px;
+	margin-left: 600px;
+	border-color: #034078;
+	width:255px;
+	height: 188px;
+}
+
+.input-file{
+	margin-left: 150px;
+}
+
+#btnOpenFileDialog:hover{
+	background-color: #FFFFFF;
+}
+
+.upload-heading{
+	margin-top: 15px;
+	margin-left: 635px;
+}
+.upload-heading2{
+	margin-top: 15px;
+	margin-left: 650px;
+	color: #9facbd;
+	padding-bottom: 31px;
+}
+.fa-upload{
+	font-size: 150px;
+	color: #034078;
+}
