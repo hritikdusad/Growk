@@ -29,7 +29,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <button type="button" class="btn btn-default navbar-btn navbar-right" id="SIGN-IN">SIGN-IN</button>
+        <a href="signin.html" target="blank"><button type="button" class="btn btn-default navbar-btn navbar-right" id="SIGN-IN">SIGN-IN</button></a>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="index.html" id="heading1">HOME</a></li>
@@ -328,6 +328,40 @@
   </div>
 </div>
 <!-- END -->
+
+<!--SIGNIN-->
+<div class="login">
+    <div class="navigation">
+      <a href="signup.html" class="signup">
+        <div class="heading1">
+          <div class="divider"></div>
+          <h1>Sign Up</h1>
+        </div>
+      </a>
+      <a href="signin.html" class="signin">
+        <div class="heading2">
+          <div class="divider2"></div>
+          <h1>Sign In</h1>
+        </div>
+      </a>
+    </div>
+    <div class="page1">
+        <h1>Welcome to Grow K</h1>
+        <p>Sign in to continue</p>
+        <form>
+          <label for="mail"><h3>Email Address</h3></label>
+          <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          <label for="pswrd"><h3>Password</h3></label>
+          <input type="password" name="pswrd" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          <h4>Forgot Password</h4>
+          <button class="btn btn-outline-info submit" type="submit">Sign In</button>
+        </form>
+        <h5>Don't have an account? SIGN UP</h5>
+
+    </div>
+  </div>
+
+  <!--END-->
 
   </body>
 </html>
